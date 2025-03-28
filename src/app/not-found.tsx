@@ -2,7 +2,7 @@ import Image from "next-image-export-optimizer";
 
 import CSSULogo from "@/../public/cssu_square.png";
 
-export default function Home() {
+export default function NotFound() {
   return (
     <section className="items-stretch flex flex-col justify-between font-semibold fadeIn">
       <div className="grow shrink-0 px-6 py-24 mt-2">
@@ -22,13 +22,13 @@ export default function Home() {
                 className="text-[#363636] font-semibold
                                 leading-[1.125] text-5xl text-center lg:text-left"
               >
-                CSSU @ UofT
+                404 - Page Not Found :(
               </h1>
               <h2
                 className="text-xl font-light leading-tight 
                             text-[#656565] break-words text-center lg:text-left"
               >
-                U of T Computer Science Student Union
+                This is not the page you were looking for...
               </h2>
             </div>
             <div className="block basis-0 grow shrink p-3 text-xl md:ml-[8.33333333%]">
