@@ -7,7 +7,7 @@ const frontMatter = {
   title: "About",
   date: "2024-06-16",
   hideLastModified: false,
-  lastModified: "2024-06-16",
+  lastModified: "2025-03-28",
   summary: "About the Computer Science Student Union",
 };
 
@@ -78,14 +78,14 @@ export default function About() {
       <ProfileContainer>
         <ProfileCard
           fullName="Pratibha Thakur"
-          position="Acting President"
+          position="Co-President"
           github="https://github.com/praticodes"
           linkedin="https://www.linkedin.com/in/thakur-pratibha"
           imageUrl="/people/PratibhaThakur.png"
         />
         <ProfileCard
           fullName="Jason Barahan"
-          position="Acting Vice President"
+          position="Treasurer"
           linkedin="https://www.linkedin.com/in/JasonBarahan"
           github="https://github.com/JasonBarahan"
           imageUrl="/people/JasonBarahan.jpg"
@@ -107,7 +107,10 @@ export default function About() {
         />
         <ProfileCard
           fullName="Yanzhen Chen"
+          github="https://github.com/YheChen"
           position="Dir. External Relations"
+          linkedin="https://www.linkedin.com/in/yanzhenchen/"
+          imageUrl="/people/YanzhenChen.jpg"
         />
       </ProfileContainer>
 
