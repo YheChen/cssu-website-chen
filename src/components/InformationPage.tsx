@@ -1,5 +1,12 @@
+type InformationPageMetadata = {
+  title: string;
+  hideLastModified?: boolean;
+  date: string;
+  lastModified?: string;
+};
+
 type InformationPageProps = {
-  metadata: any;
+  metadata: InformationPageMetadata;
   children: React.ReactNode;
 };
 

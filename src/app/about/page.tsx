@@ -72,7 +72,7 @@ export default function About() {
       <p>
         Members of the Executive Council are elected by the student body to
         serve one-year terms. These student leaders are responsible for
-        organizing the CSSU's events and initiatives to support undergraduate
+        organizing the CSSU&apos;s events and initiatives to support undergraduate
         students.
       </p>
       <ProfileContainer>
