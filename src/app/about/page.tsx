@@ -25,7 +25,7 @@ export default function About() {
         Science students who are either taking a Computer Science course or are
         part of a Computer Science program at the University of Toronto St.
         George campus. We are a student-governed body that receives funding from
-        the Arts &amp; Science Students’ Union, the Department of Computer
+        the Arts &amp; Science Students&apos; Union, the Department of Computer
         Science, and our union store. The description of the structure, rules,
         and processes of the CSSU are described in our{" "}
         <a href="/constitution.pdf">constitution</a>. The primary goal of the
