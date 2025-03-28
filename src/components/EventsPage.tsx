@@ -23,8 +23,8 @@ function getAllFrontMatter(pageType: string): EventItem[] {
         eventDirectory: "faq",
         // For a posts page you might not need mdxFolderPath
         frontMatter: {
-          title: "FAQ",
-          summary: "Answers to frequently asked questions.",
+          title: "Frequently Asked Questions",
+          summary: "Answering your most popular questions!",
           // Optionally, provide an image filename if needed
           summaryImage: "faq.jpg",
         },
@@ -33,7 +33,7 @@ function getAllFrontMatter(pageType: string): EventItem[] {
         eventDirectory: "resources",
         frontMatter: {
           title: "Resources",
-          summary: "Curated resources for students.",
+          summary: "List of Resources for CS students",
           summaryImage: "resources.jpg",
         },
       },
@@ -41,7 +41,7 @@ function getAllFrontMatter(pageType: string): EventItem[] {
         eventDirectory: "first-years-guide-to-cs",
         frontMatter: {
           title: "First Years Guide to CS",
-          summary: "Everything you need to know for your first year in CS.",
+          summary: "Everything you need to know for your first year in CS!",
           summaryImage: "first-year-guide.jpg",
         },
       },
