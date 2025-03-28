@@ -174,9 +174,13 @@ body {
 }
 
 a {
-  color: inherit;
   cursor: pointer;
   text-decoration: none;
+}
+
+.navbar a,
+.navbar-screen a {
+  color: #888 !important; /* or any shade of gray */
 }
 
 hr {

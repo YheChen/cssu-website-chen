@@ -22,6 +22,7 @@ export default function BA2250() {
           href="https://map.utoronto.ca/?id=1809#!m/494470"
           target="_blank"
           rel="noopener noreferrer"
+          className="text-blue-500"
         >
           BA2250
         </a>{" "}
@@ -226,6 +227,7 @@ export default function BA2250() {
             href="https://governingcouncil.utoronto.ca/secretariat/policies/code-student-conduct-december-13-2019"
             target="_blank"
             rel="noopener noreferrer"
+            className="text-blue-500"
           >
             UofT Code of Student Conduct
           </a>
@@ -267,6 +269,7 @@ export default function BA2250() {
             href="../ba2250-volunteering/"
             target="_blank"
             rel="noopener noreferrer"
+            className="text-blue-500"
           >
             guide
           </a>
