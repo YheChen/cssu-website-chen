@@ -43,7 +43,7 @@ export default function EventCard({
         <div className="text-right mt-2 lg:mt-0">
           <Link
             href={url}
-            className="duration-300 border-[#dbdbdb] border cursor-pointer justify-center pl-[0.75em] pr-[0.75em] text-center whitespace-nowrap rounded-[6px] pt-[0.375em] pb-[0.375em] bg-[#00329e] border-transparent text-white hover:bg-[#002e91]"
+            className="duration-300 border cursor-pointer justify-center pl-[0.75em] pr-[0.75em] text-center whitespace-nowrap rounded-[6px] pt-[0.375em] pb-[0.375em] bg-[#00329e] border-transparent text-white hover:bg-[#002e91]"
           >
             Read more
           </Link>

@@ -56,7 +56,6 @@ type NavbarHrefProps = {
   setMobileMenuIsOpen: (isOpen: boolean) => void;
 };
 
-// TODO: Make hamburger menu work without CSS
 function NavbarHref({ href, text, setMobileMenuIsOpen }: NavbarHrefProps) {
   return (
     <Link
@@ -91,7 +90,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`bg-white relative z-30 lg:items-stretch
+      className={`relative z-30 lg:items-stretch
             lg:flex lg:min-h-[3.25rem] min-h-[3.8rem] transition-all bg-transparent
             ${hasShadow ? "navbar-shadow-active" : ""}`}
       role="navigation"
