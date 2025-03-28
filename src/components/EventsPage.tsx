@@ -17,7 +17,7 @@ type EventsPageProps = {
 
 // Inline version of getAllFrontMatter (stub implementation)
 // Replace this with your actual logic to retrieve event front matter.
-function getAllFrontMatter(pageType: string): EventItem[] {
+function getAllFrontMatter(): EventItem[] {
   // For demonstration, we're returning some dummy data.
   return [
     {
@@ -69,7 +69,7 @@ function mapToImage(mdxFolderPath: string, summaryImage: string) {
 }
 
 export default function EventsPage({ pageType, pageTitle }: EventsPageProps) {
-  const frontMatters = getAllFrontMatter(pageType);
+  const frontMatters = getAllFrontMatter();
   const groupedFrontMatters = groupBy(frontMatters, 3);
 
   return (
@@ -85,7 +85,7 @@ export default function EventsPage({ pageType, pageTitle }: EventsPageProps) {
               className="ml-[-0.75rem] mr-[-0.75rem] mt-[-0.75rem] last:mb-[-0.75rem] md:flex"
             >
               {group.map((event, innerIndex) => {
-                const { nextImagePath, absoluteImagePath } =
+                const { nextImagePath } =
                   event.mdxFolderPath && event.frontMatter.summaryImage
                     ? mapToImage(
                         event.mdxFolderPath,
@@ -93,7 +93,6 @@ export default function EventsPage({ pageType, pageTitle }: EventsPageProps) {
                       )
                     : {
                         nextImagePath: undefined,
-                        absoluteImagePath: undefined,
                       };
                 return (
                   <EventCard
@@ -103,7 +102,6 @@ export default function EventsPage({ pageType, pageTitle }: EventsPageProps) {
                     summary={event.frontMatter.summary}
                     contentSubdirectory={event.eventDirectory}
                     image={nextImagePath}
-                    absoluteImagePath={absoluteImagePath}
                   />
                 );
               })}
