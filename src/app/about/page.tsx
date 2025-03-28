@@ -77,40 +77,66 @@ export default function About() {
       </p>
       <ProfileContainer>
         <ProfileCard
+          fullName="Cynthia Sa"
+          position="Co-President"
+          github="https://github.com/praticodes"
+          linkedin="https://www.linkedin.com/in/cynthia-sa-5776b0192/"
+        />
+        <ProfileCard
           fullName="Pratibha Thakur"
           position="Co-President"
           github="https://github.com/praticodes"
           linkedin="https://www.linkedin.com/in/thakur-pratibha"
           imageUrl="/people/PratibhaThakur.png"
         />
-        <ProfileCard
+      </ProfileContainer>
+      <ProfileContainer>
+      <ProfileCard
           fullName="Jason Barahan"
           position="Treasurer"
           linkedin="https://www.linkedin.com/in/JasonBarahan"
           github="https://github.com/JasonBarahan"
           imageUrl="/people/JasonBarahan.jpg"
         />
-      </ProfileContainer>
-
-      <ProfileContainer>
+      <ProfileCard
+          fullName="Yanzhen Chen"
+          github="https://github.com/YheChen"
+          position="VP External"
+          linkedin="https://www.linkedin.com/in/yanzhenchen/"
+          imageUrl="/people/YanzhenChen.jpg"
+        />
+        <ProfileCard
+          fullName="Edison Yao"
+          github="https://github.com/DojimaRyu"
+          position="VP Internal"
+          linkedin="https://www.linkedin.com/in/edison-yao/"
+          imageUrl="/people/EdisonYao.jpg"
+        />
         <ProfileCard
           fullName="Aviraj Newatia"
-          position="Dir. Academic Events"
+          position="VP Academic"
           github="https://github.com/projectavi"
           linkedin="https://www.linkedin.com/in/avinewatia/"
           imageUrl="/people/AvirajNewatia.jpeg"
         />
-        <ProfileCard
+      </ProfileContainer>
+      <ProfileContainer>
+      <ProfileCard
+          fullName="Unknown"
+          position="VP Social"
+        />
+      <ProfileCard
           fullName="Zachary Muir"
-          position="Dir. Internal Relations"
+          position="VP Staff"
           linkedin="https://www.linkedin.com/in/zachmuir/"
         />
         <ProfileCard
-          fullName="Yanzhen Chen"
-          github="https://github.com/YheChen"
-          position="Dir. External Relations"
-          linkedin="https://www.linkedin.com/in/yanzhenchen/"
-          imageUrl="/people/YanzhenChen.jpg"
+          fullName="Unknown"
+          position="VP Marketing"
+        />
+        <ProfileCard
+          fullName="Avery Ng"
+          position="VP Special Events"
         />
       </ProfileContainer>
 
