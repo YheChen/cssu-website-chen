@@ -132,17 +132,11 @@ export default function About() {
         <ProfileCard
           fullName="Vishnu Nittoor"
           position="Associate, Academic Committee"
-          imageUrl="/people/VishnuNittoor.jpg"
-        />
-        <ProfileCard
-          fullName="Adam Petrovic"
-          position="Associate, Academic Committee"
         />
         <ProfileCard
           fullName="Lily Phan"
           linkedin="https://www.linkedin.com/in/lilyphan48/"
           position="Associate, Academic Committee"
-          imageUrl="/people/LilyPhan.jpg"
         />
         <ProfileCard
           fullName="Andrew Kwok"
