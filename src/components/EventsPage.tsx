@@ -15,10 +15,40 @@ type EventsPageProps = {
   pageTitle: string;
 };
 
-// Inline version of getAllFrontMatter (stub implementation)
-// Replace this with your actual logic to retrieve event front matter.
-function getAllFrontMatter(): EventItem[] {
-  // For demonstration, we're returning some dummy data.
+// Instead of reading from MD files, we conditionally return data
+function getAllFrontMatter(pageType: string): EventItem[] {
+  if (pageType === "posts") {
+    return [
+      {
+        eventDirectory: "faq",
+        // For a posts page you might not need mdxFolderPath
+        frontMatter: {
+          title: "FAQ",
+          summary: "Answers to frequently asked questions.",
+          // Optionally, provide an image filename if needed
+          summaryImage: "faq.jpg",
+        },
+      },
+      {
+        eventDirectory: "resources",
+        frontMatter: {
+          title: "Resources",
+          summary: "Curated resources for students.",
+          summaryImage: "resources.jpg",
+        },
+      },
+      {
+        eventDirectory: "first-years-guide-to-cs",
+        frontMatter: {
+          title: "First Years Guide to CS",
+          summary: "Everything you need to know for your first year in CS.",
+          summaryImage: "first-year-guide.jpg",
+        },
+      },
+    ];
+  }
+
+  // Otherwise, return your default (or MD-based) data.
   return [
     {
       eventDirectory: "event1",
@@ -47,11 +77,11 @@ function getAllFrontMatter(): EventItem[] {
         summaryImage: "event3.jpg",
       },
     },
-    // ...add as many items as you need
+    // ...other events if needed
   ];
 }
 
-// Inline version of groupBy: Groups an array into subarrays of given size.
+// Groups an array into subarrays of a given size.
 function groupBy<T>(arr: T[], groupSize: number): T[][] {
   const groups: T[][] = [];
   for (let i = 0; i < arr.length; i += groupSize) {
@@ -60,16 +90,16 @@ function groupBy<T>(arr: T[], groupSize: number): T[][] {
   return groups;
 }
 
-// Inline version of mapToImage: Convert folder path and image name to image paths.
+// Converts folder path and image name to image paths.
 function mapToImage(mdxFolderPath: string, summaryImage: string) {
   const nextImagePath = `${mdxFolderPath}/${summaryImage}`;
-  // For simplicity, assume the absolute path is the same.
   const absoluteImagePath = nextImagePath;
   return { nextImagePath, absoluteImagePath };
 }
 
 export default function EventsPage({ pageType, pageTitle }: EventsPageProps) {
-  const frontMatters = getAllFrontMatter();
+  // Pass the pageType to getAllFrontMatter so it returns the right data.
+  const frontMatters = getAllFrontMatter(pageType);
   const groupedFrontMatters = groupBy(frontMatters, 3);
 
   return (
@@ -85,15 +115,14 @@ export default function EventsPage({ pageType, pageTitle }: EventsPageProps) {
               className="ml-[-0.75rem] mr-[-0.75rem] mt-[-0.75rem] last:mb-[-0.75rem] md:flex"
             >
               {group.map((event, innerIndex) => {
+                // When not using mdxFolderPath (i.e. for posts) image might be optional
                 const { nextImagePath } =
                   event.mdxFolderPath && event.frontMatter.summaryImage
                     ? mapToImage(
                         event.mdxFolderPath,
                         event.frontMatter.summaryImage
                       )
-                    : {
-                        nextImagePath: undefined,
-                      };
+                    : { nextImagePath: undefined };
                 return (
                   <EventCard
                     key={`${index}${innerIndex}${event.frontMatter.title}`}
