@@ -92,11 +92,11 @@ export default function About() {
       </ProfileContainer>
       <ProfileContainer>
         <ProfileCard
-          fullName="Jason Barahan"
+          fullName="Aditya Gautam"
           position="Treasurer"
-          linkedin="https://www.linkedin.com/in/JasonBarahan"
-          github="https://github.com/JasonBarahan"
-          imageUrl="/people/JasonBarahan.jpg"
+          github=""
+          linkedin=""
+          imageUrl=""
         />
         <ProfileCard
           fullName="Yanzhen Chen"
@@ -113,22 +113,39 @@ export default function About() {
           imageUrl="/people/EdisonYao.jpg"
         />
         <ProfileCard
-          fullName="Aviraj Newatia"
+          fullName="Lily Phan"
           position="VP Academic"
-          github="https://github.com/projectavi"
-          linkedin="https://www.linkedin.com/in/avinewatia/"
-          imageUrl="/people/AvirajNewatia.jpeg"
+          github=""
+          linkedin=""
+          imageUrl=""
         />
       </ProfileContainer>
       <ProfileContainer>
-        <ProfileCard fullName="Alisa Iskakova" position="VP Social" />
+        <ProfileCard
+          fullName="Alisa Iskakova"
+          position="VP Social"
+          github=""
+          linkedin=""
+          imageUrl=""
+        />
         <ProfileCard
           fullName="Zachary Muir"
           position="VP Staff"
           linkedin="https://www.linkedin.com/in/zachmuir/"
         />
-        <ProfileCard fullName="Colleen Chang" position="VP Marketing" />
-        <ProfileCard fullName="Avery Ng" position="VP Special Events" />
+        <ProfileCard
+          fullName="Colleen Chang"
+          position="VP Marketing"
+          github="https://github.com/chexerboxer"
+          linkedin="https://www.linkedin.com/in/colleenxychang/"
+          imageUrl="/people/ColleenChang.png"
+        />
+        <ProfileCard
+          fullName="Avery Ng"
+          position="VP Special Events"
+          github="https://github.com/avery-jingxin"
+          linkedin="https://www.linkedin.com/in/averyng128/"
+        />
       </ProfileContainer>
 
       {/* General Council */}
