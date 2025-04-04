@@ -91,7 +91,7 @@ export default function Navbar() {
   return (
     <nav
       className={`relative z-30 lg:items-stretch
-            lg:flex lg:min-h-[3.25rem] min-h-[3.8rem] transition-all bg-transparent
+            lg:flex lg:min-h-[3.25rem] min-h-[3.8rem] transition-all bg-white
             ${hasShadow ? "navbar-shadow-active" : ""}`}
       role="navigation"
       aria-label="main navigation"
@@ -172,7 +172,7 @@ export default function Navbar() {
               href="/posts/student-resources/"
               text="Resources"
             />
-            <NavbarHref
+            {/* <NavbarHref
               setMobileMenuIsOpen={setMobileMenuIsOpen}
               href="/partner-events/"
               text="Partner Events"
@@ -181,7 +181,7 @@ export default function Navbar() {
               setMobileMenuIsOpen={setMobileMenuIsOpen}
               href="/events/"
               text="Events"
-            />
+            /> */}
             <NavbarHref
               setMobileMenuIsOpen={setMobileMenuIsOpen}
               href="/posts/"
