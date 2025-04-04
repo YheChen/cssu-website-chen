@@ -7,7 +7,7 @@ const frontMatter = {
   title: "About",
   date: "2024-06-16",
   hideLastModified: false,
-  lastModified: "2025-03-28",
+  lastModified: "2025-04-04",
   summary: "About the Computer Science Student Union",
 };
 
@@ -72,8 +72,8 @@ export default function About() {
       <p>
         Members of the Executive Council are elected by the student body to
         serve one-year terms. These student leaders are responsible for
-        organizing the CSSU&apos;s events and initiatives to support undergraduate
-        students.
+        organizing the CSSU&apos;s events and initiatives to support
+        undergraduate students.
       </p>
       <ProfileContainer>
         <ProfileCard
@@ -91,14 +91,14 @@ export default function About() {
         />
       </ProfileContainer>
       <ProfileContainer>
-      <ProfileCard
+        <ProfileCard
           fullName="Jason Barahan"
           position="Treasurer"
           linkedin="https://www.linkedin.com/in/JasonBarahan"
           github="https://github.com/JasonBarahan"
           imageUrl="/people/JasonBarahan.jpg"
         />
-      <ProfileCard
+        <ProfileCard
           fullName="Yanzhen Chen"
           github="https://github.com/YheChen"
           position="VP External"
@@ -121,47 +121,27 @@ export default function About() {
         />
       </ProfileContainer>
       <ProfileContainer>
-      <ProfileCard
-          fullName="Unknown"
-          position="VP Social"
-        />
-      <ProfileCard
+        <ProfileCard fullName="Alisa Iskakova" position="VP Social" />
+        <ProfileCard
           fullName="Zachary Muir"
           position="VP Staff"
           linkedin="https://www.linkedin.com/in/zachmuir/"
         />
-        <ProfileCard
-          fullName="Unknown"
-          position="VP Marketing"
-        />
-        <ProfileCard
-          fullName="Avery Ng"
-          position="VP Special Events"
-        />
+        <ProfileCard fullName="Colleen Chang" position="VP Marketing" />
+        <ProfileCard fullName="Avery Ng" position="VP Special Events" />
       </ProfileContainer>
 
       {/* General Council */}
       <h2>General Council</h2>
       <p>
-        General Council members are volunteers appointed by the Executive
-        Council to assist with our initiatives and be leaders in the community.
-        We have yet to appoint all members of the General Council for the
-        2024-25 academic year. Keep an eye out for updates to the application
-        process.
+        General Council member are volunteers appointed by the Executive Council
+        to assist with our initiatives and be leaders in the community. We have
+        yet to appoint all members of the General Council for the 2025-26
+        academic year. Keep an eye out for updates to the application process.
       </p>
       <ProfileContainer>
         <ProfileCard
-          fullName="Avery Ng"
-          linkedin="https://www.linkedin.com/in/averyng128/"
-          position="Associate, Academic Committee"
-        />
-        <ProfileCard
           fullName="Vishnu Nittoor"
-          position="Associate, Academic Committee"
-        />
-        <ProfileCard
-          fullName="Lily Phan"
-          linkedin="https://www.linkedin.com/in/lilyphan48/"
           position="Associate, Academic Committee"
         />
         <ProfileCard
